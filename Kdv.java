@@ -9,10 +9,13 @@ public class Kdv {
     double kdvİkinciMiktarı = hamUcret*8/100;
     double kdvliİlkUcret= hamUcret*118/100;
     double kdvliBuyukUcret= hamUcret*108/100;
-     double kdv = hamUcret>1000?kdvİkinciMiktarı:kdvİlkMiktarı;
+    
+    double kdv = hamUcret>1000?kdvİkinciMiktarı:kdvİlkMiktarı;
+    double kdvliUcret =hamUcret>1000?kdvliBuyukUcret:kdvliİlkUcret;
 
     System.out.println("kdv miktarınız  :"+ kdv );
-   // System.out.println("kdvli toplam bcretiniz  :"+kdvliBuyukUcret);
+    System.out.println("kdvli toplam bcretiniz  :"+kdvliUcret);
+    System.out.println("kdv siz ücretiniz "+ hamUcret );
 
    }
     
